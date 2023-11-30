@@ -18,6 +18,7 @@ public class ArrayStats {
 
         int minim = Integer.MAX_VALUE;
         int maxim = Integer.MIN_VALUE;
+        int suma = 0;
         for(int i = 0; i < array.length; i++){
             if(minim > array[i]){
                 minim = array[i];
@@ -25,9 +26,11 @@ public class ArrayStats {
             if(maxim < array[i]){
                 maxim = array[i];
             }
+            suma += array[i];
         }
 
         System.out.printf("L'element més xicotet és: %d\n", minim);
         System.out.printf("L'element més gran és: %d\n", maxim);
+        System.out.printf("La suma total és %d\n", suma);
     }
 }
