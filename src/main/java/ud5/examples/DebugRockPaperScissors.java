@@ -29,7 +29,7 @@ public class DebugRockPaperScissors {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in).useLocale(Locale.US);
-        System.out.print("Introdueix l'elecció del jugador 1 (pedra/paper/tisores): ");
+        System.out.print("Introdueix l'elecció del jugador 2 (pedra/paper/tisores): ");
         String p1 = in.nextLine();
         System.out.print("Introdueix l'elecció del jugador 2 (pedra/paper/tisores): ");
         String p2 = in.nextLine();
