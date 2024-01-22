@@ -79,6 +79,10 @@ public class Car {
         this.velocity += velocity;
     }
 
+    public void decelerate(int velocity){
+        return;
+    }
+
     /**
      * Condueix el cotxe durant els segons especificats.
      * Aquest mètode actualitza els kilòmetres recorreguts tenint en compte
