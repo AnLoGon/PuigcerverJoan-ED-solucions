@@ -76,11 +76,8 @@ public class Car {
      * @param velocity Velocitat que accelerarà el cotxe
      */
     public void accelerate(int velocity){
-        this.velocity += velocity;
-    }
-
-    public void decelerate(int velocity){
-        return;
+        if (velocity > 0)
+            this.velocity += velocity;
     }
 
     /**
