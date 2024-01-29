@@ -66,6 +66,7 @@ public class Car {
 
     /**
      * Accelera el cotxe en 5 km/h
+     * @see Car#accelerate(int)
      */
     public void accelerate(){
         accelerate(5);
@@ -93,7 +94,7 @@ public class Car {
      * Condueix el cotxe durant un minut.
      * Aquest mètode actualitza els kilòmetres recorreguts tenint en compte
      * la velocitat actual.
-     * @see Car#drive()
+     * @see Car#drive(int)
      */
     public void drive(){
         drive(60);
