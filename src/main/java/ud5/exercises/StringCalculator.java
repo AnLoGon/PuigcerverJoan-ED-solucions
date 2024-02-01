@@ -6,9 +6,10 @@ public class StringCalculator {
             return 0;
 
         String[] args = str.split(",");
-        if (args.length > 1)
-            return Integer.parseInt(args[0])
-                + Integer.parseInt(args[1]);
-        return Integer.parseInt(str);
+        int suma = 0;
+        for (int i = 0; i < args.length; i++) {
+            suma += Integer.parseInt(args[i]);
+        }
+        return suma;
     }
 }

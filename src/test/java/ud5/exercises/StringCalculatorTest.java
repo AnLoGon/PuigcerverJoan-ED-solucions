@@ -58,4 +58,12 @@ class StringCalculatorTest {
         int result = calculator.suma("1,2");
         assertEquals(expected, result);
     }
+
+    @Test
+    @DisplayName("StringCalculator::suma(1,2,3) should return 6")
+    void suma_givenThreeParameters_shouldReturnAdditionAllOfThem(){
+        int expected = 6;
+        int result = calculator.suma("1,2,3");
+        assertEquals(expected, result);
+    }
 }
