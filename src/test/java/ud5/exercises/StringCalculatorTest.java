@@ -4,6 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.InputMismatchException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class StringCalculatorTest {
@@ -65,5 +67,19 @@ class StringCalculatorTest {
         int expected = 6;
         int result = calculator.suma("1,2,3");
         assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("StringCalculator::suma(1,2\\n3) should return 6")
+    void suma_givenStringWithNewLineAsSeparator_shouldReturnAdditionAllOfThem(){
+        int expected = 6;
+        int result = calculator.suma("1,2\n3");
+        assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("StringCalculator::suma(1,2,) should return error")
+    void suma_givenStringWithNewSeparatorAtEnd_shouldReturnError(){
+        assertThrows(InputMismatchException.class, () -> calculator.suma("1,2,"));
     }
 }
