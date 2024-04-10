@@ -19,6 +19,15 @@ public class Car {
         this.km = 0.0;
     }
 
+    public Car(String plate, String brand, String model, double km) {
+        this.plate = plate;
+        this.brand = brand;
+        this.model = model;
+        this.speed = 0.0;
+        this.km = km;
+    }
+
+
     public String getPlate() {
         return plate;
     }
@@ -41,5 +50,9 @@ public class Car {
 
     public void accelerate(double speed) {
         this.speed += speed;
+    }
+
+    public void setKm(double km) {
+        this.km = km;
     }
 }

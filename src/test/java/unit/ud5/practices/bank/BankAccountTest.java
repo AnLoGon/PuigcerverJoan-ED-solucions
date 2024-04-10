@@ -1,9 +1,10 @@
-package ud5.practices.bank;
+package unit.ud5.practices.bank;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import ud5.practices.bank.BankAccount;
 
 import static org.junit.jupiter.api.Assertions.*;
 

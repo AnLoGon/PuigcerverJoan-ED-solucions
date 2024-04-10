@@ -1,8 +1,9 @@
-package ud5.exercises;
+package unit.ud5.exercises;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import ud5.exercises.StringCalculator;
 
 import java.util.InputMismatchException;
 

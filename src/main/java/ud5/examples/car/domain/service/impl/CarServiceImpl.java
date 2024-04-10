@@ -11,6 +11,7 @@ public class CarServiceImpl implements CarService {
     private final CarRepository carRepository;
     private final EmailService emailService;
 
+
     public CarServiceImpl(CarRepository carRepository, EmailService emailService) {
         this.carRepository = carRepository;
         this.emailService = emailService;

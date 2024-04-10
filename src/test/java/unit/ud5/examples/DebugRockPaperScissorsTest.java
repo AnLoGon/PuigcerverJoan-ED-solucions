@@ -1,13 +1,15 @@
-package ud5.examples;
+package unit.ud5.examples;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import ud5.examples.DebugRockPaperScissors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class DebugRockPaperScissorsTest {
     @Test
     void givenPaperVsPaper_shouldEmpat(){
-        assertEquals(0, DebugRockPaperScissors.guanya("paper", "paper"));
+        Assertions.assertEquals(0, DebugRockPaperScissors.guanya("paper", "paper"));
     }
 
     @Test

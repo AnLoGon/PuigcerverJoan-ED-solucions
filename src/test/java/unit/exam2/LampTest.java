@@ -1,5 +1,6 @@
-package exam2;
+package unit.exam2;
 
+import exam2.Lamp;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
