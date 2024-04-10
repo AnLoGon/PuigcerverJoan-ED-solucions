@@ -1,4 +1,4 @@
-package ud5.examples;
+package ud5.examples.car.domain.entity;
 
 /**
  *  A simple car class with a constructor and a method to accelerate.
@@ -9,11 +9,14 @@ public class Car {
     private String model;
     private double speed;
 
+    private double km;
+
     public Car(String plate, String brand, String model) {
         this.plate = plate;
         this.brand = brand;
         this.model = model;
         this.speed = 0.0;
+        this.km = 0.0;
     }
 
     public String getPlate() {
@@ -30,6 +33,10 @@ public class Car {
 
     public double getSpeed() {
         return speed;
+    }
+
+    public double getKilometers() {
+        return km;
     }
 
     public void accelerate(double speed) {
