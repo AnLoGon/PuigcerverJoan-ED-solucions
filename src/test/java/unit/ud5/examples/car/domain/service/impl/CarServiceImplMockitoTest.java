@@ -117,4 +117,15 @@ class CarServiceImplMockitoTest {
             verify(indicatorServiceMock).showMaxSpeedIndicator(true);
         }
     }
+
+    @Nested
+    class InsertCar {
+        @Test
+        void shouldInsertCar() {
+            Car car = new Car("1234ABC", "Seat", "Ibiza");
+            carService.insertCar(car);
+
+            verify(carRepositoryMock).insertCar(car);
+        }
+    }
 }

@@ -9,4 +9,6 @@ public interface CarService {
     List<Car> findAll();
     Car findByPlate(String plate) throws ResourceNotFoundException;
     void accelerate(Car car, double speed);
+
+    void insertCar(Car car);
 }

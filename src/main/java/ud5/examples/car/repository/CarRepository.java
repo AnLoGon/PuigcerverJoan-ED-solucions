@@ -9,4 +9,6 @@ public interface CarRepository {
 
     List<Car> findAll();
     Car findByPlate(String plate) throws ResourceNotFoundException;
+
+    void insertCar(Car car);
 }

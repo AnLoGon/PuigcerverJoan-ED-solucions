@@ -4,6 +4,7 @@ import ud5.examples.car.domain.entity.Car;
 import ud5.examples.car.exception.ResourceNotFoundException;
 import ud5.examples.car.repository.CarRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CarRepositoryMock implements CarRepository {
@@ -11,6 +12,8 @@ public class CarRepositoryMock implements CarRepository {
         new Car("1234ABC", "Seat", "Ibiza"),
         new Car("4321ABC", "Renault", "Clio")
     );
+
+    private final List<Car> insertedCars = new ArrayList<>();
 
     @Override
     public List<Car> findAll() {
@@ -25,5 +28,14 @@ public class CarRepositoryMock implements CarRepository {
             return cars.get(1);
         } else
             throw new ResourceNotFoundException("Car with plate " + plate + " not found");
+    }
+
+    @Override
+    public void insertCar(Car car) {
+        insertedCars.add(car);
+    }
+
+    public boolean wasCarInserted(Car car) {
+        return insertedCars.contains(car);
     }
 }

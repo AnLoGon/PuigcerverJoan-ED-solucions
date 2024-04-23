@@ -34,4 +34,9 @@ public class CarServiceImpl implements CarService {
         car.accelerate(speed);
         indicatorService.showMaxSpeedIndicator(car.getSpeed() > 120);
     }
+
+    @Override
+    public void insertCar(Car car) {
+        carRepository.insertCar(car);
+    }
 }
