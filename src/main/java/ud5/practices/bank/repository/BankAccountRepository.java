@@ -23,4 +23,3 @@ public interface BankAccountRepository {
      */
     void updateAccountHolder(BankAccount bankAccount);
 }
-

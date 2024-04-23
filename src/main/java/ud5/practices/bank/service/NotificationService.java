@@ -9,4 +9,3 @@ public interface NotificationService {
      */
     void notifyUpdateAccountHolderChange(BankAccount bankAccount);
 }
-

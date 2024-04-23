@@ -42,4 +42,3 @@ public class BankAccountServiceImpl implements BankAccountService {
         bankAccountRepository.updateAccountHolder(bankAccount);
     }
 }
-

@@ -5,4 +5,3 @@ public class InvalidAccountHolderNameException extends Exception {
         super(message);
     }
 }
-
