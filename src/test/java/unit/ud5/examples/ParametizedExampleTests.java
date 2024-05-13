@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-public class ParametizedExample {
+public class ParametizedExampleTests {
     @ParameterizedTest
     @ValueSource(ints = {2, 4, 6, 8, 10})
     @DisplayName("Parameterized Test with ValueSource")
@@ -28,7 +28,7 @@ public class ParametizedExample {
     }
 
     @ParameterizedTest(name="{0} + {1} = {2}")
-    @CsvSource({ "1,1,2", "2,2,4", "3,3,6", "4,4,8", "5,5,15", "6,6,12", "7,7,14", "10,90,100" })
+    @CsvSource({ "1,1,2", "2,2,4", "3,3,6", "4,4,8", "5,5,10", "6,6,12", "7,7,14", "10,90,100" })
     @DisplayName("Parameterized Test with CsvSource")
     public void parameterizedCsvSourceTest(int left, int right, int expected) {
         assertEquals(expected, Math.addExact(left, right));
